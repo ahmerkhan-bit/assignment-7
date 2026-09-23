@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Social Media Cards</title>
+
+    <style>
+
+        /* =========================
+           BASIC RESET
+        ========================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            min-height: 100vh;
+            background: #ffffff;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        /* =========================
+           MAIN CONTAINER
+        ========================= */
+
+        .cards-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+        }
+
+
+        /* =========================
+           CARD
+        ========================= */
+
+        .card {
+            width: 190px;
+            height: 272px;
+
+            background: #ffffff;
+
+            border: 1px solid #111111;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            text-align: center;
+
+            padding: 27px 12px;
+        }
+
+
+        /* =========================
+           ICON AREA
+        ========================= */
+
+        .icon {
+            width: 45px;
+            height: 45px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            margin-bottom: 17px;
+        }
+
+        .icon svg {
+            width: 42px;
+            height: 42px;
+
+            fill: #000000;
+        }
+
+
+        /* =========================
+           CARD HEADING
+        ========================= */
+
+        .card h2 {
+            font-size: 20px;
+            font-weight: 800;
+
+            letter-spacing: 0.2px;
+
+            color: #000000;
+
+            margin-bottom: 10px;
+        }
+
+
+        /* =========================
+           CARD TEXT
+        ========================= */
+
+        .card p {
+            width: 165px;
+
+            font-size: 12px;
+            line-height: 16px;
+
+            color: #333333;
+
+            margin-bottom: 13px;
+        }
+
+
+        /* =========================
+           BUTTON
+        ========================= */
+
+        .read-more {
+            width: 163px;
+            height: 32px;
+
+            border-radius: 20px;
+
+            background: #000000;
+            color: #ffffff;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            text-decoration: none;
+
+            font-size: 10px;
+            font-weight: 400;
+
+            margin-top: auto;
+
+            transition: 0.3s;
+        }
+
+        .read-more:hover {
+            transform: scale(1.03);
+        }
+
+
+        /* =========================
+           INSTAGRAM CARD
+        ========================= */
+
+        .instagram-card {
+            background: #e52b6b;
+            border-color: #e52b6b;
+        }
+
+        .instagram-card h2 {
+            color: #ffffff;
+        }
+
+        .instagram-card p {
+            color: #ffffff;
+        }
+
+        .instagram-card .icon svg {
+            fill: #ffffff;
+        }
+
+        .instagram-card .read-more {
+            background: #ffffff;
+            color: #e52b6b;
+        }
+
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media (max-width: 700px) {
+
+            body {
+                padding: 30px 15px;
+            }
+
+            .cards-container {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <div class="cards-container">
+
+
+        <!-- ==================================
+             TWITTER CARD
+        ================================== -->
+
+        <div class="card">
+
+            <div class="icon">
+
+                <!-- Twitter Bird Icon -->
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="
+                    M23.3 4.7
+                    c-.8.4-1.7.6-2.6.7
+                    .9-.6 1.6-1.5 1.9-2.6
+                    -.9.5-1.9.9-2.9 1.1
+                    C18.8 2.9 17.7 2.3 16.4 2.3
+                    c-2.5 0-4.5 2-4.5 4.5
+                    0 .4 0 .7.1 1
+                    C8.3 7.6 5 5.8 2.8 3
+                    c-.4.7-.6 1.5-.6 2.3
+                    0 1.6.8 3 2 3.8
+                    -.7 0-1.4-.2-2-.5
+                    v.1c0 2.2 1.6 4 3.7 4.4
+                    -.4.1-.8.2-1.2.2
+                    -.3 0-.6 0-.9-.1
+                    .6 1.8 2.3 3.1 4.3 3.1
+                    -1.6 1.3-3.6 2-5.7 2
+                    -.4 0-.7 0-1.1-.1
+                    2 1.3 4.4 2.1 6.9 2.1
+                    8.3 0 12.8-6.9 12.8-12.8
+                    v-.6c.9-.6 1.6-1.3 2.3-2.2z">
+                    </path>
+                </svg>
+
+            </div>
+
+
+            <h2>TWITTER</h2>
+
+
+            <p>
+                Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit.
+                Expedita ullam aliquid non
+                eligendi, nemo est neque
+                reiciendis error?
+            </p>
+
+
+            <a href="#" class="read-more">
+                READ MORE
+            </a>
+
+        </div>
+
+
+
+        <!-- ==================================
+             INSTAGRAM CARD
+        ================================== -->
+
+        <div class="card instagram-card">
+
+            <div class="icon">
+
+                <!-- Instagram Icon -->
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+
+                    <path d="
+                    M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9
+                    a5.5 5.5 0 0 1-5.5 5.5h-9
+                    A5.5 5.5 0 0 1 2 16.5v-9
+                    A5.5 5.5 0 0 1 7.5 2zm0 2
+                    A3.5 3.5 0 0 0 4 7.5v9
+                    A3.5 3.5 0 0 0 7.5 20h9
+                    a3.5 3.5 0 0 0 3.5-3.5v-9
+                    A3.5 3.5 0 0 0 16.5 4h-9z">
+                    </path>
+
+                    <path d="
+                    M12 7a5 5 0 1 0 0 10
+                    5 5 0 0 0 0-10zm0 2
+                    a3 3 0 1 1 0 6
+                    3 3 0 0 1 0-6z">
+                    </path>
+
+                    <circle cx="17.5" cy="6.5" r="1.3"></circle>
+
+                </svg>
+
+            </div>
+
+
+            <h2>INSTAGRAM</h2>
+
+
+            <p>
+                Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit.
+                Expedita ullam aliquid non
+                eligendi, nemo est neque
+                reiciendis error?
+            </p>
+
+
+            <a href="#" class="read-more">
+                READ MORE
+            </a>
+
+        </div>
+
+
+
+        <!-- ==================================
+             YOUTUBE CARD
+        ================================== -->
+
+        <div class="card">
+
+            <div class="icon">
+
+                <!-- YouTube Icon -->
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+
+                    <path d="
+                    M23.5 6.2
+                    a3 3 0 0 0-2.1-2.1
+                    C19.5 3.5 12 3.5 12 3.5
+                    s-7.5 0-9.4.6
+                    A3 3 0 0 0 .5 6.2
+                    C0 8.1 0 12 0 12
+                    s0 3.9.5 5.8
+                    a3 3 0 0 0 2.1 2.1
+                    c1.9.6 9.4.6 9.4.6
+                    s7.5 0 9.4-.6
+                    a3 3 0 0 0 2.1-2.1
+                    C24 15.9 24 12 24 12
+                    s0-3.9-.5-5.8z">
+
+                    </path>
+
+                    <path
+                        d="M9.6 15.5L15.8 12 9.6 8.5v7z"
+                        fill="#ffffff">
+                    </path>
+
+                </svg>
+
+            </div>
+
+
+            <h2>YOUTUBE</h2>
+
+
+            <p>
+                Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit.
+                Expedita ullam aliquid non
+                eligendi, nemo est neque
+                reiciendis error?
+            </p>
+
+
+            <a href="#" class="read-more">
+                READ MORE
+            </a>
+
+        </div>
+
+
+    </div>
+
+
+</body>
+</html>
